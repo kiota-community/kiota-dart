@@ -1,0 +1,46 @@
+name: kiota_dart_generate
+description: api generation
+version: 0.0.1
+publish_to: none
+
+environment:
+  sdk: ^3.4.4
+
+# Add regular dependencies here.
+dependencies:
+  microsoft_kiota_abstractions:
+    git:
+      url: https://github.com/kiota-community/dart_kiota.git
+      ref: main
+      path: packages/microsoft_kiota_abstractions
+  microsoft_kiota_http:
+    git:
+      url: https://github.com/kiota-community/dart_kiota.git
+      ref: main
+      path: packages/microsoft_kiota_http
+  microsoft_kiota_serialization_form:
+    git:
+      url: https://github.com/kiota-community/dart_kiota.git
+      ref: main
+      path: packages/microsoft_kiota_serialization_form
+  microsoft_kiota_serialization_text:
+    git:
+      url: https://github.com/kiota-community/dart_kiota.git
+      ref: main
+      path: packages/microsoft_kiota_serialization_text
+  microsoft_kiota_serialization_json:
+    git:
+      url: https://github.com/kiota-community/dart_kiota.git
+      ref: main
+      path: packages/microsoft_kiota_serialization_json
+  microsoft_kiota_serialization_multipart:
+    git:
+      url: https://github.com/kiota-community/dart_kiota.git
+      ref: main
+      path: packages/microsoft_kiota_serialization_multipart
+  http: ^1.2.2
+  uuid: ^4.5.1
+
+dev_dependencies:
+  lints: ^3.0.0
+  test: ^1.25.2
